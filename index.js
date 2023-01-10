@@ -184,7 +184,7 @@ const back = {
 const callback = {
     reply_markup: {
         keyboard: [
-            [{text: 'Өтініш қалдыру'}],
+//             [{text: 'Өтініш қалдыру'}],
             [{text: 'Артқа ⏪'}],
         ]
     }
@@ -212,7 +212,7 @@ const info = {
             [{text: 'Оқыту тілі'}],
             [{text: 'Оқу уақыты'}],
             [{text: 'Жеңілдіктер'}],
-            [{text: 'Өтініш қалдыру'}],
+//             [{text: 'Өтініш қалдыру'}],
             [{text: 'Артқа ⏪'}],
         ]
     }
@@ -481,20 +481,20 @@ const start = () =>{
 
 // //заявка
 
-            case 'Өтініш қалдыру':
-                bot.sendMessage(chatId, "Қай мектепке тоқталдыңыз", schools)
+//             case 'Өтініш қалдыру':
+//                 bot.sendMessage(chatId, "Қай мектепке тоқталдыңыз", schools)
 
-                bot.on('callback_query', async msg =>{
-                    const data = msg.data
-                    const channelId = -1001726672814
-                    const name = msg.message.chat.first_name
-                    const username = msg.message.chat.username
+//                 bot.on('callback_query', async msg =>{
+//                     const data = msg.data
+//                     const channelId = -1001726672814
+//                     const name = msg.message.chat.first_name
+//                     const username = msg.message.chat.username
 
-                    await bot.sendMessage(channelId, `Школа: ${data}\nИмя: ${name}\nusername: https://t.me/${username}`)
-                    await bot.sendMessage(chatId, "Біз сізбен байланысқа шығамыз☺️", back)
-                })
+//                     await bot.sendMessage(channelId, `Школа: ${data}\nИмя: ${name}\nusername: https://t.me/${username}`)
+//                     await bot.sendMessage(chatId, "Біз сізбен байланысқа шығамыз☺️", back)
+//                 })
 
-                break
+//                 break
 
 // //заявка
 
